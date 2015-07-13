@@ -1,0 +1,81 @@
+# Pr1_lab7
+<script>
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="Root">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Thing" minOccurs="0" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="IDThing" type="xs:string" />
+<xs:element name="Count_Thing" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+</script>
+<?xml version="1.0" encoding="utf-8"?>
+<Root xmlns="XSD1.xsd"> Сотрудники  <br />
+
+<Thing> <table border = "1"> <tr> 
+<td>Код сотрудника</td>
+<td>Фамилия</td> 
+<td><IDThing>Имя</IDThing></td>
+<td><IDThing>Отчество</IDThing></td>
+<td><IDThing>Должность</IDThing></td>
+<td><IDThing>Дата приема на работу</IDThing></td>
+</tr>
+<tr>
+<td><Count_Thing>1</Count_Thing></td>
+<td><IDThing>Ребров</IDThing></td>
+<td><IDThing>Артём</IDThing></td>
+<td><IDThing>Александрович</IDThing></td>
+<td><IDThing>Вратарь</IDThing></td>
+<td><IDThing>22.07.2013</IDThing></td>
+
+</tr>
+<tr>
+<td><Count_Thing>2</Count_Thing></td>
+<td><IDThing>Паршивлюк</IDThing></td>
+<td><IDThing>Сергей</IDThing></td>
+<td><IDThing>Павлович</IDThing></td>
+<td><IDThing>Защитник</IDThing></td>
+<td><IDThing>20.01.2010</IDThing></td>
+
+</tr>
+<tr>
+<td><Count_Thing>3</Count_Thing></td>
+<td><IDThing>Макеев</IDThing></td>
+<td><IDThing>Евгений</IDThing></td>
+<td><IDThing>Олегович</IDThing></td>
+<td><IDThing>Защитник</IDThing></td>
+<td><IDThing>21.06.2012</IDThing></td>
+
+</tr>
+<tr>
+<td><Count_Thing>4</Count_Thing></td>
+<td><IDThing>Глушаков</IDThing></td>
+<td><IDThing>Денис</IDThing></td>
+<td><IDThing>Александрович</IDThing></td>
+<td><IDThing>Полузащитник</IDThing></td>
+<td><IDThing>12.02.2014</IDThing></td>
+
+</tr>
+<tr>
+<td><Count_Thing>5</Count_Thing></td>
+<td><IDThing>Давыдов</IDThing></td>
+<td><IDThing>Денис</IDThing></td>
+<td><IDThing>Сергеевич</IDThing></td>
+<td><IDThing>Нападающий</IDThing></td>
+<td><IDThing>10.03.2015</IDThing></td>
+
+</tr>
+
+</table>
+
+</Thing>
+</Root>
