@@ -1,0 +1,81 @@
+
+<script>
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="Root">
+<xs:complexType>
+<xs:choice maxOccurs="unbounded">
+<xs:element name="Thing" minOccurs="0" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="IDThing" type="xs:string" />
+<xs:element name="Count_Thing" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+</script>
+<?xml version="1.0" encoding="utf-8"?>
+<Root xmlns="XSD1.xsd">Лекарственные средства <br />
+
+<Thing> <table border = "1"> <tr> 
+<td>Код лекарства</td>
+<td>Название лекарства</td> 
+<td><IDThing>Показания к применению</IDThing></td>
+<td><IDThing>Единица измерения</IDThing></td>
+<td><IDThing>Количество в упаковке</IDThing></td>
+<td><IDThing>Название производителя</IDThing></td>
+</tr>
+<tr>
+<td><Count_Thing>1</Count_Thing></td>
+<td><IDThing>Антигрипин</IDThing></td>
+<td><IDThing>ОРВИ</IDThing></td>
+<td><IDThing>таблетки</IDThing></td>
+<td><IDThing>10</IDThing></td>
+<td><IDThing>"Henkel"</IDThing></td>
+
+</tr>
+<tr>
+<td><Count_Thing>2</Count_Thing></td>
+<td><IDThing>Нурофен</IDThing></td>
+<td><IDThing>Обезбаливающий эффект</IDThing></td>
+<td><IDThing>таблетки</IDThing></td>
+<td><IDThing>5</IDThing></td>
+<td><IDThing>"Reckitt Benckiser"</IDThing></td>
+
+</tr>
+<tr>
+<td><Count_Thing>3</Count_Thing></td>
+<td><IDThing>Хлоргексидин</IDThing></td>
+<td><IDThing>Для наружного применения</IDThing></td>
+<td><IDThing>мл.</IDThing></td>
+<td><IDThing>200 мл</IDThing></td>
+<td><IDThing>ООО "Росбис"</IDThing></td>
+
+</tr>
+<tr>
+<td><Count_Thing>4</Count_Thing></td>
+<td><IDThing>Пластырь</IDThing></td>
+<td><IDThing>Бактерицидный эффект</IDThing></td>
+<td><IDThing>шт.</IDThing></td>
+<td><IDThing>5</IDThing></td>
+<td><IDThing>"ВероФарм"</IDThing></td>
+
+</tr>
+<tr>
+<td><Count_Thing>5</Count_Thing></td>
+<td><IDThing>Пиковит</IDThing></td>
+<td><IDThing>Поддержание иммунитета</IDThing></td>
+<td><IDThing>таблетки</IDThing></td>
+<td><IDThing>100</IDThing></td>
+<td><IDThing>"KRKA"</IDThing></td>
+
+</tr>
+
+</table>
+
+</Thing>
+</Root>
